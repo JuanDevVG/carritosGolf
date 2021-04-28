@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carritos</title>
+</head>
+<body>
+	<form action="../php_files/respuestaCarrito.php" method="POST">
+		<h2>Carritos</h2>
+		<p>
+			Placa:
+			<input type="text" name="placa" maxlength="8" required placeholder="Ingrese el numero de la placa" id="placa"></p>
+		<p>
+			Especificacion:<br>
+            <textarea name="especificacion" id="especificacion" maxlength="400"></textarea>
+		</p>
+			Precio de renta por hora:
+			<input type="text" name="precio_hora" id="precioRentaHora" maxlength="8" required></p>
+		<p>
+			Precio de renta por semana:
+			<input type="text" name="precio_semana" id="precioRentaSemana" maxlength="8" required></p>
+		<p>
+			Color:
+			<input type="color" name="color_carro" id="color" required></p>
+		<p>
+			Modelo:
+			<input type="text" name="modelo_carro" id="modelo" required></p>
+		<p>
+			Kilometraje:
+			<input type="number" name="kilometraje_carro" id="kilometraje"></p>
+		<p>
+			Disponibilidad:
+			SI
+				<input type="radio" name="disponible" value="Si" id="disponibilidad-si" required>
+			NO
+				<input type="radio" name="disponible" value="No" id="disponibilidad-no" required>
+		</p>
+		<p>
+			<input type="submit" name="enviar" value="Registrar">	
+		</p>
+	</form>
+	<p>
+		<a href="modificarCarrito.html">Modificar</a>
+        <a href="eliminarCarrito.html">Eliminar</a>
+        <a href="consultaCarrito.html">Consultar</a>
+	</p>
+	<br>
+	<a href="../index.html">Regresar</a>
+</body>
+</html>

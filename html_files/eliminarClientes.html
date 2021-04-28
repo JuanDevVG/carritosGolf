@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Eliminar cliente</title>
+	</head>
+	<body>
+		<h2>Eliminar cliente</h2>
+		<form class="" action="../php_files/respuestaEliminarClientes.php" method="POST">
+			<p>
+			Numero de licencia:
+			<input type="text" name="num_licencia" required placeholder="Ingrese licencia a modificar"></p>
+			<input type="submit" name="name" value="Eliminar" onclick="return confirmaBorrarCliente()">
+		</form>
+		<br>
+		<a href="Clientes.html">Regresar</a>
+
+		<script src="../javascript_files/confirmaBorrar.js"></script>
+	</body>
+</html>

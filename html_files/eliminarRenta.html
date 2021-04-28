@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar renta</title>
+</head>
+<body>
+    <h2>Eliminar renta</h2>
+    <form action="../php_files/respuestaEliminarRenta.php" method="POST">
+        <p>
+			Numero de Licencia:
+            <input type="text" name="num_licencia" required placeholder="Ingrese la licencia" id="num_licencia">
+        </p>
+        <p>
+            Numero de Placa:
+            <input type="text" name="placa" maxlength="10" required placeholder="Ingrese la placa" id="placa"></p>
+        </p>
+
+        <input type="submit" name="name" value="Eliminar" onclick="return confirmaBorrarRenta()">
+        
+    </form>
+    <br>
+    <a href="../html_files/Rentas.html">Regresar</a>
+    
+    <script src="../javascript_files/confirmaBorrar.js"></script>
+</body>
+</html>

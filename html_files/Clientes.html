@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clientes</title>
+</head>
+<body>
+	<form action="../php_files/respuestaClientes.php" method="POST">
+		<h2>Clientes</h2>
+		<p>
+			Numero de licencia:
+			<input type="text" name="num_licencia" required placeholder="Ingrese numero licencia">
+		</p>
+		<p>
+			Nombre completo:
+			<input type="text" name="nombre" max="40" required placeholder="Ingrese nombre completo">
+		</p>
+		<p>
+			Numero de telefono:
+			<input type="text" name="telefono" placeholder="Ingrese numero telefono">
+		</p>
+		<p>
+			Dirección:
+			<input type="text" name="direccion" placeholder="Ingrese la direccion">
+		</p>
+		<br>
+		<p>
+			<input type="submit" name="enviar" value="Registrar"> 
+		</p>
+		<p>
+			<a href="modificarClientes.html">Modificar</a>
+		   	<a href="eliminarClientes.html">Eliminar</a>
+		    <a href="consultaCliente.html">Consultar</a>	
+		</p>
+		<a href="../index.html">Regresar</a>
+	</form>
+	<br>
+</body>
+</html>

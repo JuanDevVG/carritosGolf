@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carritos</title>
+	</head>
+	<body>
+		<h2>Eliminar carrito</h2>
+
+		<form class="" action="../php_files/respuestaEliminarCarrito.php" method="POST">
+			<p>
+			Placa:
+			<input type="text" name="placa" required placeholder="Ingrese placa a modificar">
+			</p>
+
+			<input type="submit" name="name" value="Eliminar" onclick="return confirmaBorrarCarrito()">
+
+		</form>
+		
+		<br>
+		<a href="Carritos.html">Regresar</a>
+
+		<script src="../javascript_files/confirmaBorrar.js"></script>
+	</body>
+</html>
